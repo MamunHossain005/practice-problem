@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1c005ec541.js" crossorigin="anonymous"></script>
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body class="h-screen">
+    <section class="mt-8 w-4/6 h-5/6 mx-auto bg-sky-300">
+        <h1 class="p-4 text-center text-3xl font-bold">My Text Editor</h1>
+        <div class="w-3/4 h-5/6 mx-auto p-5 bg-sky-100 border-2 border-slate-600">
+            <div class="flex justify-between">
+                <div class="flex flex-row gap-4">
+                    <div id="btn-bold"><i class="fa-solid fa-b"></i></div>
+                    <div id="btn-italic"><i class="fa-solid fa-italic"></i></div>
+                    <div id="btn-underline"><i class="fa-solid fa-underline"></i></div>
+                </div>
+                <div class="flex flex-row gap-5">
+                    <div id="left-align"><i class="fa-solid fa-align-left"></i></div>
+                    <div id="align-center"><i class="fa-solid fa-align-center"></i></div>
+                    <div id="right-align"><i class="fa-solid fa-align-right"></i></div>
+                    <div id="align-justify"><i class="fa-solid fa-align-justify"></i></div>
+                </div>
+                <div class="flex flex-row gap-3">
+                    <div title="Font size"><input type="number" name="" id="font-size-field" class="w-10 text-lg font-semibold bg-transparent" value="16"></div>
+                    <div id="capitalize" title="Uppercase">
+                        <i class="fa-solid fa-a"></i>
+                    </div>
+                    <div id="btn-color"><input type="color" name="" id="color-field" class="border-1 border-slate-50"></div>
+                </div>
+            </div>
+            <hr class="mt-2 border-[1px] border-slate-600">
+            <textarea name="" id="text-field" class="mt-8 h-5/6 p-3 w-full h-1/ focus:outline-none rounded-lg" placeholder="Please write text here"></textarea>
+        </div>
+    </section>
+    <script src="./js/text-editor.js"></script>
+</body>
+</html>
